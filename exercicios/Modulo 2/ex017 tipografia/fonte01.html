@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            /* Medidas absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+
+             RECOMENDADO USAR PX OU EM! MAS PREFERENCIA PRA EM.
+            */
+            font-size: 1em;
+            font-weight: ;
+            /* font weight determina se ela é normal ou negrito, possivel mexer entre lighter normal bold bolder ou porcentagens de 100% a 900% (se disponiveis, altera por fonte)
+            
+            text-style para italico
+            
+            e text-decoration para sublinhado*/
+        }
+        h1{
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            /* shorthand font
+
+            - font style - font weight - font size - font family*/
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+        h2{
+            font: bold 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe esse omnis similique, officiis possimus, quisquam eius provident voluptatem consectetur dicta illum. Minima harum placeat recusandae illo ratione sapiente labore nemo?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quasi eligendi quae porro molestias dolorem culpa nihil commodi voluptatum, perspiciatis quaerat tempora et deserunt, facilis aliquam laborum, a perferendis ea?</p>
+</body>
+</html>
