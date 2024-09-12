@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
             height: 100vh;
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
-            background-position: center top;
+            background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+
+            /*Shorthand Background
+            
+            color > image > position > repeat > size > attachment
+            */
+            
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
+
+            /* o background size nao funciona na shorthand*/
         }
         
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -29,7 +40,16 @@
     <h1>Teste imagem de fundo</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat qui, culpa tenetur praesentium iusto minima, quae et ipsam quos exercitationem tempora? Vitae voluptates sunt sequi, officiis quidem ab optio at?
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quo, fugiat tempore illum ex, aliquam quisquam quibusdam ipsa repellendus voluptatum dignissimos quasi accusamus doloribus quis rerum aperiam perferendis, consequuntur pariatur?
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae consequatur quis ipsa a temporibus ut voluptate, harum ipsam repellat illo sed quia sit eius perferendis id, accusantium eos et dolores.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae consequatur quis ipsa a temporibus ut voluptate, harum ipsam repellat illo sed quia sit eius perferendis id, accusantium eos et dolores.<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat qui, culpa tenetur praesentium iusto minima, quae et ipsam quos exercitationem tempora? Vitae voluptates sunt sequi, officiis quidem ab optio at?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quo, fugiat tempore illum ex, aliquam quisquam quibusdam ipsa repellendus voluptatum dignissimos quasi accusamus doloribus quis rerum aperiam perferendis, consequuntur pariatur?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae consequatur quis ipsa a temporibus ut voluptate, harum ipsam repellat illo sed quia sit eius perferendis id, accusantium eos et dolores.
+        </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat qui, culpa tenetur praesentium iusto minima, quae et ipsam quos exercitationem tempora? Vitae voluptates sunt sequi, officiis quidem ab optio at?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quo, fugiat tempore illum ex, aliquam quisquam quibusdam ipsa repellendus voluptatum dignissimos quasi accusamus doloribus quis rerum aperiam perferendis, consequuntur pariatur?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae consequatur quis ipsa a temporibus ut voluptate, harum ipsam repellat illo sed quia sit eius perferendis id, accusantium eos et dolores.
+            </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat qui, culpa tenetur praesentium iusto minima, quae et ipsam quos exercitationem tempora? Vitae voluptates sunt sequi, officiis quidem ab optio at?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quo, fugiat tempore illum ex, aliquam quisquam quibusdam ipsa repellendus voluptatum dignissimos quasi accusamus doloribus quis rerum aperiam perferendis, consequuntur pariatur?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae consequatur quis ipsa a temporibus ut voluptate, harum ipsam repellat illo sed quia sit eius perferendis id, accusantium eos et dolores.
+                </p>
     </p></main>
 </body>
 </html>
