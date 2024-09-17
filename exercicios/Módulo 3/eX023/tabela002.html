@@ -17,7 +17,7 @@
             padding: 10px;
         }
         thead, tfoot{
-            background-color: grey;
+            background-color: black;
             color: white;
         }
         td.num{
@@ -25,6 +25,18 @@
         }
         td.porcentagem{
             text-align: right;
+        }
+        caption{
+            font-size: 1em;
+            font-weight: bold;
+            padding: 10px;
+            background-color:  lightgray;
+        }
+        tbody > tr:nth-child(even){ /* 2n-1  para par */
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(odd){ /* 2n para impar */
+            background-color: white;
         }
 
     </style>
@@ -44,11 +56,12 @@
 
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
     <thead>
         <tr>
-            <th>Estado</th>
-            <th>População</th>
-            <th class="porcentagem"> % da pop. total</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
+            <th class="porcentagem" style="width: 110px;"> % da pop. total</th>
         </tr>
     </thead>
     <tbody>
@@ -190,7 +203,7 @@
     </tbody>
     <tfoot>
         <tr>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td class="num"> <strong>210.147.125</strong> </td>
             <td class="porcentagem"> <strong>100%</strong> </td>
         </tr>
